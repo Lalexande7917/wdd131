@@ -24,11 +24,22 @@ ul {
 p {
     text-align: left;
 }
-p2 { 
+p { 
     font-style: italic;
 }
 img {
     width: 150px;
     margin-left: 33%;
     margin-right: 33%;
+}
+
+.dark {
+    background-color: #333;
+    color: white;
+
+}
+
+.dark h2 {
+color: #4F9ACF;
+text-decoration: underline #4F9ACF;
 }
