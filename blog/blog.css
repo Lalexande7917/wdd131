@@ -1,0 +1,62 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header h1{
+    text-align: center;
+}
+
+nav {
+    color: #AF1B3F;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 10px, double, #EFC69B ;
+    text-align: right;
+    font-size: larger;
+}
+
+a:link, a:visited {
+    color:#AF1B3F
+}
+
+#articles {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px; 
+    width: 100%;
+    position: relative;
+}
+
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    border-bottom: 1px solid #EFC69B;
+    padding-bottom: 10px;
+}
+
+.article > div {
+    padding: 10px;
+}
+
+.date, .ages, .genre, .stars {
+    grid-column: 1;
+}
+
+.title, .image, .description {
+    grid-column: 2;
+}
+
+.title {
+    font-size: 25px;
+}
+
+.image img {
+    max-height: 300px;
+    width: auto;
+}
+
+.blank-column {
+    grid-column: 3;
+}
