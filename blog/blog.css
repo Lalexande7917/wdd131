@@ -1,32 +1,38 @@
 body {
     font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-header h1{
+header h1 {
     text-align: center;
 }
 
 nav {
     color: #AF1B3F;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    border: 10px, double, #EFC69B ;
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    border: 10px double #EFC69B;
     font-size: larger;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
-a:link, a:visited {
-    color:#AF1B3F
+nav a {
+    margin: 0 10px;
+    color: #AF1B3F;
+    text-decoration: none;
 }
 
 #articles {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    gap: 20px; 
+    gap: 20px;
     width: 100%;
-    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
-
 
 article {
     display: grid;
@@ -34,6 +40,7 @@ article {
     gap: 20px;
     border-bottom: 1px solid #EFC69B;
     padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .article > div {
@@ -41,7 +48,16 @@ article {
 }
 
 .date, .ages, .genre, .stars {
-    grid-column: 1;
+    text-align: right;
+    font-size: 18px;
+    line-height: 1.2; 
+    border-right: 1px solid #EFC69B; 
+    padding: 0 10px; 
+    margin-bottom: 10px; 
+}
+
+.date {
+    font-size: 20px; 
 }
 
 .title, .image, .description {
@@ -50,13 +66,35 @@ article {
 
 .title {
     font-size: 25px;
+    margin-top: 5px; 
+}
+
+.image {
+    text-align: center;
 }
 
 .image img {
     max-height: 300px;
     width: auto;
+    display: block;
+    margin: 0 auto; 
 }
 
 .blank-column {
     grid-column: 3;
+}
+
+
+article:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    #articles {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+
+    .article {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
 }
