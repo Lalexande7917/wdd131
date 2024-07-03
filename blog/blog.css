@@ -91,10 +91,10 @@ article:last-child {
 
 @media (max-width: 768px) {
     #articles {
-        grid-template-columns: 1fr; /* Single column layout */
-    }
+        grid-template-columns: 1fr; 
 
     .article {
-        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-columns: 1fr; 
+    }
     }
 }
