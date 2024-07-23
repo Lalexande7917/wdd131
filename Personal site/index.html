@@ -1,0 +1,89 @@
+    <!DOCTYPE html>
+    <html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name ="description" content="The Alexander Archives = A writing Portfolio by Liam Corben Alexander. Exploring poetry, creative non-fiction, and fiction.">
+        <meta name="author" content="Liam Corben Alexander">
+        <title>The Alexander Archives</title>
+        <link type="text/css" rel="stylesheet" href="style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js"></script>
+        <script src="main.js" defer></script>
+        
+    </head>
+    <body>
+        <header>
+            <div class="move-bg"></div>
+            <div class="header-grid">
+                <img src="Logo.PNG" alt="Logo image"/>
+                <h1>The Alexander Archives</h1>
+            </div>  
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="poetry.html">Poetry</a></li>
+                <li><a href="essays.html">Essays</a></li>
+                <li><a href="fiction.html">Fiction</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            <div id="grid-rows">
+                <section id="home">
+                    <h2>Welcome to My Writing Portfolio</h2>
+                    <p>This website is a collection of all my different writings from over the years. I hope you enjoy your stay</p>
+                </section>
+
+                <div class="section-grid">
+                    <div id="latest-work">
+                        <h2>Latest Work</h2>
+                        <div id="latest-work-content" class="scroll-box"></div>
+                    </div>
+                    <div id="about">
+                        <h2>About the author</h2>
+                        <div class="about-content">
+                            <p>Corb bounced around, meandered, drifted, journeyed, wandered, 
+                                and wondered throughout his life. Claiming Arizona as his home state,
+                                he spent most of his pubescent years going to school in Peoria, AZ. 
+                                Whether or not his teachers believed in him is a non-factor, because writing
+                                only became an interest when he chose to write weekly emails home serving a mission 
+                                in Argentina. Met with praise for his prose, he realized this was a nobler pursuit to engage in.
+                                He is currently a sophomore in College, minoring in Creative Writing, but he has high hopes that
+                                the worlds he spends time creating take him far. 
+                            </p>
+                            <img src="IMG_4816.JPG" alt="Corben at Glacier National Park: September 2022"/>   
+                        </div>
+                        <div class="contact-container">
+                            <div id="contact">
+                                <h2>Contact</h2>
+                                <form id="contact-form">
+                                    <label for="name">Name:</label>
+                                    <input type="text" id="name" name="name" required>
+
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" name="email" required>
+
+                                    <label for="message">Message:</label>
+                                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                                    <button type="submit">Send</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>    
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Liam Corben Alexander</p>
+        </footer>
+
+    </body>
+    </html>

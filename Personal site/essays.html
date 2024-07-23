@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essays | The Alexander Archives</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="move-bg"></div>
+        <div class="header-grid">
+            <img src="Logo.PNG" alt="Logo image"/>
+            <h1>The Alexander Archives</h1>
+        </div>  
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="poetry.html">Poetry</a></li>
+            <li><a href="essays.html">Essays</a></li>
+            <li><a href="fiction.html">Fiction</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="essays">
+            <h2>Essays</h2>
+            <div class="scroll-box" id="essay-container"></div>
+                <div class="essay-grid" id="essay-grid"></div>
+        </section>
+    </main>
+
+    <div id="essay-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-essay-content"></div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
+    <script src="main.js" defer></script>
+    <footer>
+        <p>&copy; 2024 Liam Corben Alexander</p>
+    </footer>
+</body>
+</html>
